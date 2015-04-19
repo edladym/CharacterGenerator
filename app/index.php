@@ -48,6 +48,9 @@
 							<td><?php echo $character->stats->cha->val; ?></td>
 							<td><?php echo $character->stats->cha->mod; ?></td>
 						</tr>
+						<tr>
+							<td>test</td>
+						</tr>
 					</table>
 		</center>
 		</div>
