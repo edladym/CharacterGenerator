@@ -53,29 +53,41 @@
 
 
 
-    public function generateName(){
+    public static function generateName(){
       return self::$name1[array_rand(self::$name1)].self::$name2[array_rand(self::$name2)].self::$name3[array_rand(self::$name3)];
     }
 
-    public function generateAttribute($attribute){
+    public static function generateAttribute($attribute){
       $attrs = self::$$attribute;
       return $attrs[array_rand($attrs)];
     }
 
-    public function generateStats(){
+    public static function generateStats(){
+      $stats = [
+        'str' => (object)[],
+        'dex' => (object)[],
+        'con' => (object)[],
+        'int' => (object)[],
+        'wis' => (object)[],
+        'cha' => (object)[]
+      ];
+      foreach($stats as &$stat){
+        $value = self::diceRoller();
 
+        $stat->val = $value;
+        $stat->mod = self::abilityModifiers($value);
+      }
+      return (object)$stats;
     }
 
-    private function diceRoller(){
-      global $total;
+    private static function diceRoller(){
       $rolls = [rand(1,6), rand(1,6), rand(1,6), rand(1,6)];
       sort($rolls);
       array_shift($rolls);
-      $total = array_sum($rolls);
-      return $total;
+      return array_sum($rolls);
     }
 
-    private function abilityModifiers($total){
+    private static function abilityModifiers($total){
       if ($total==1)
         return "-5";
       else if ($total>=2 && $total <=3)

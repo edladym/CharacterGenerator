@@ -13,18 +13,9 @@
 		//* Print out a description of a randomly generated character *
 		//************************************************************* ?>
 		<center>
-			<h1>
-				<?php 
-					echo "You see ".$character->name. 
-					", the " .   " " . "</br>";
-
-					echo "He is "  . ", with " . 
-					" eyes and "  . " hair. </br>";
-
-					echo "He appears to be of "  . " build. </br></br>";
-
-					echo "His stats are as follows:</br>"; ?>
-					<table style = "width:30%">
+			<p>You see <?php echo $character->name; ?>, the <?php echo $character->race . ' ' . $character ->class; ?>.</p> 
+			<p>He is <?php echo $character->height; ?>, with <?php echo $character->eye_color;?> eyes and <?php echo $character->hair_color; ?> hair.</p>
+					<table>
 						<tr>
 							<th>Ability</th>
 							<th>Score</th>
@@ -60,7 +51,6 @@
 							<td><?php echo ''; ?></td>
 						</tr>
 					</table>
-			</h1>
 		</center>
 
 	</body>

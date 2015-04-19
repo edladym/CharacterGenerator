@@ -8,7 +8,7 @@
 ?>
 <pre>
   <?php
-    var_dump($gc);
-    var_dump($gc2);
+    var_dump($gc->stats->str->mod);
+    //var_dump($gc2);
   ?>
 </pre>
