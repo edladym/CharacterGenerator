@@ -1,17 +1,14 @@
+<?php
+	include('../src/Character.php');
+	$character = new Character();
+?>
 <!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
-	<body>
-		<?php
-
-    include('../src/Character.php');
-    $character = new Character();
-
-		//*************************************************************
-		//* Print out a description of a randomly generated character *
-		//************************************************************* ?>
+<body>
+	<div class="container">   
 		<center>
 			<p>You see <?php echo $character->name; ?>, the <?php echo $character->race . ' ' . $character ->class; ?>.</p> 
 			<p>He is <?php echo $character->height; ?>, with <?php echo $character->eye_color;?> eyes and <?php echo $character->hair_color; ?> hair.</p>
@@ -35,6 +32,7 @@
 							<td>Constitution</td>
 							<td><?php echo $character->stats->con->val; ?></td>
 							<td><?php echo $character->stats->con->mod; ?></td>
+						</tr>
 						<tr>
 							<td>Intelligence</td>
 							<td><?php echo $character->stats->int->val; ?></td>
@@ -52,6 +50,6 @@
 						</tr>
 					</table>
 		</center>
-
+		</div>
 	</body>
 </html>

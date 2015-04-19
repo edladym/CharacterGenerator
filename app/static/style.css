@@ -1,4 +1,27 @@
+html{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
 body{
   background-color: #000;
-  color: #f00;
+  background-image: url(wallpaper_04-1280.jpg);
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0px;
+  color: #fff;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+.container{
+	background-color: rgba(0,0,0,0.8);
+	height: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
