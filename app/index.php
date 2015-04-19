@@ -24,7 +24,6 @@
 					echo "He appears to be of "  . " build. </br></br>";
 
 					echo "His stats are as follows:</br>"; ?>
-
 					<table style = "width:30%">
 						<tr>
 							<th>Ability</th>
