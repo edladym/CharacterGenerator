@@ -44,6 +44,8 @@
 		   		"ottle", "ove", "ow", "ox", "ud", "ule", "umber", "un", "under", "undle", "unt", 
 		   		"ur", "us", "ust", "ut"];
 
+    $name4 = ["icus"];
+
 		$classlist = ["Barbarian", "Bard", "Druid", "Monk", "Paladin", "Ranger", "Rogue", "Fighter", "Wizard", "Cleric"];
 
 		$racelist = ["Human", "Gnome", "Dwarf", "Gnome", "Halfling", "Half-Elf"];
