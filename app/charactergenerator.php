@@ -44,7 +44,7 @@
 		   		"ottle", "ove", "ow", "ox", "ud", "ule", "umber", "un", "under", "undle", "unt", 
 		   		"ur", "us", "ust", "ut"];
 
-    $name4 = ["icus"];
+    	$name4 = ["icus"];
 
 		$classlist = ["Barbarian", "Bard", "Druid", "Monk", "Paladin", "Ranger", "Rogue", "Fighter", "Wizard", "Cleric"];
 
@@ -99,7 +99,7 @@
 			<h1>
 				<?php 
 
-					echo "You see " . $name1[array_rand($name1)] . $name2[array_rand($name2)] . $name3[array_rand($name3)] . 
+					echo "You see " . $name1[array_rand($name1)] . $name2[array_rand($name2)] . $name3[array_rand($name3)] . $name4[0] . 
 					", the " . $racelist[array_rand($racelist)] . " " . $classlist[array_rand($classlist)] . "</br>";
 
 					echo "He is " . $height[array_rand($height)] . ", with " . $eyecolor[array_rand($eyecolor)] . 
