@@ -21,32 +21,32 @@
 						<tr>
 							<td>Strength</td>
 							<td><?php echo $character->stats->str->val; ?></td>
-							<td><?php echo $character->stats->str->modifier; ?></td>
+							<td><?php echo $character->stats->str->mod; ?></td>
 						</tr>
 						<tr>
 							<td>Dexterity</td>
 							<td><?php echo $character->stats->dex->val; ?></td>
-							<td><?php echo $character->stats->dex->modifier; ?></td>
+							<td><?php echo $character->stats->dex->mod; ?></td>
 						</tr>
 						<tr>
 							<td>Constitution</td>
 							<td><?php echo $character->stats->con->val; ?></td>
-							<td><?php echo $character->stats->con->modifier; ?></td>
+							<td><?php echo $character->stats->con->mod; ?></td>
 						</tr>
 						<tr>
 							<td>Intelligence</td>
 							<td><?php echo $character->stats->int->val; ?></td>
-							<td><?php echo $character->stats->int->modifier; ?></td>
+							<td><?php echo $character->stats->int->mod; ?></td>
 						</tr>
 						<tr>
 							<td>Wisdom</td>
 							<td><?php echo $character->stats->wis->val; ?></td>
-							<td><?php echo $character->stats->wis->modifier; ?></td>
+							<td><?php echo $character->stats->wis->mod; ?></td>
 						</tr>
 						<tr>
 							<td>Charisma</td>
 							<td><?php echo $character->stats->cha->val; ?></td>
-							<td><?php echo $character->stats->cha->modifier; ?></td>
+							<td><?php echo $character->stats->cha->mod; ?></td>
 						</tr>
 					</table>
 		</center>
