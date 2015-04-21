@@ -75,7 +75,7 @@
         $value = self::diceRoller();
 
         $stat->val = $value;
-        $stat->mod = self::abilityModifiers($value);
+        $stat->modifier = self::abilityModifiers($value);
       }
       return (object)$stats;
     }
